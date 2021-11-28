@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+<h1>模型参数页面</h1>
+<form action="http://127.0.0.1:5000/paramodel/" method="post" enctype="multipart/form-data">
+    <p>
+        <label for="trainsize">训练集比例：</label>  <!--label和input通过id绑定在一起-->
+        <input type="text" name="trainsize" placeholder="训练集比例，默认值0.7" id="trainsize">
+    </p>
+    <!--placeholder 输入框默认显示的值-->
+    <p>
+        <label for="missingrate">缺失值阈值：</label>  <!--label和input通过id绑定在一起-->
+        <input type="text" name="missingrate" placeholder="剔除缺失值阈值，默认值0.95" id="missingrate">
+    </p>
+    <!--placeholder 输入框默认显示的值-->
+    <p>
+        <label for="identityrate">单一值阈值：</label>  <!--label和input通过id绑定在一起-->
+        <input type="text" name="identityrate" placeholder="剔除单一值阈值，默认值0.95" id="identityrate">
+    </p>
+    <!--placeholder 输入框默认显示的值-->
+    <p>
+        <input type="submit" value="开始训练">
+    </p>
+</form>
+
+</body>
+</html>
